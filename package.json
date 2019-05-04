@@ -1,0 +1,24 @@
+{
+  "name": "fuse-code-camp-2019-react",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "npx babel --watch src --out-dir dist --copy-files --presets react-app/prod",
+    "serve": "npx http-server -c-1",
+    "start": "concurrently --kill-others \"npx babel --watch src --out-dir dist --copy-files --presets react-app/prod\" \"npx http-server -c-1\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-react-app": "^3.1.2",
+    "concurrently": "^4.1.0",
+    "http-server": "^0.11.1"
+  }
+}

@@ -1,0 +1,27 @@
+header {
+  padding-left: 10px;
+}
+
+aside ul {
+  list-style: none; padding: 0px; margin: 0px;
+}
+
+aside ul li {
+  cursor: pointer; padding: 5px 10px;
+}
+
+main {
+  padding-left: 10px;
+}
+
+footer {
+  padding-top: 10px; padding-left: 10px;
+}
+
+.character-details-hidden {
+  display: none;
+}
+
+.star-wars-logo {
+  height: 52px;
+}
