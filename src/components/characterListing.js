@@ -1,3 +1,5 @@
+import React from 'react';
+
 export class Sidebar extends React.Component {
     constructor(props) {
         super(props);
@@ -9,6 +11,7 @@ export class Sidebar extends React.Component {
         this.props.onSelectedCharacterChange(event.target.textContent);
       }
     render() {
+      if (this.props.characterData) {
         return (
           <aside className="character-listing">
             <ul>
@@ -24,5 +27,7 @@ export class Sidebar extends React.Component {
             </ul>
           </aside>
         );
+      }
+      return <div>No data to display</div>;
     }
 }

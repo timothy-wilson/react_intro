@@ -1,4 +1,4 @@
-import { SimpleListing } from "./simpleListing.js";
+import React from 'react';
 
 export class CharacterDetails extends React.Component {
     render() {

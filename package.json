@@ -1,24 +1,31 @@
 {
-  "name": "fuse-code-camp-2019-react",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "compile": "npx babel --watch src --out-dir dist --copy-files --presets react-app/prod",
-    "serve": "npx http-server -c-1",
-    "start": "concurrently --kill-others \"npx babel --watch src --out-dir dist --copy-files --presets react-app/prod\" \"npx http-server -c-1\""
-  },
-  "author": "",
-  "license": "ISC",
+  "name": "star-wars-info",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
     "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "react-dom": "^16.8.6",
+    "react-scripts": "3.0.1"
   },
-  "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-preset-react-app": "^3.1.2",
-    "concurrently": "^4.1.0",
-    "http-server": "^0.11.1"
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
