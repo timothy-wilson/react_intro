@@ -1,6 +1,6 @@
 let url = "https://swapi.co/api/people/?format=json"
 
-async function buildDict() {
+export async function buildDict() {
     try {
         let fullData = {};
         while(url != null) {
@@ -17,4 +17,4 @@ async function buildDict() {
     }
 }
 
-characterDataListing = buildDict();
+export var characterDataListing = buildDict();

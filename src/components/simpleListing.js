@@ -1,3 +1,5 @@
+import React from 'react';
+
 export class SimpleListing extends React.Component {
     render() {
         return (

@@ -1,8 +1,10 @@
-import { Header } from "./header.js";
-import { Footer } from "./footer.js";
-import { Sidebar } from "./characterListing.js";
-import { characterDataListing } from "../data/fetchFacts.js";
-import { CharacterDetails } from "./charecterDetails.js"
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { Header } from "./components/header.js";
+import { Footer } from "./components/footer.js";
+import { Sidebar } from "./components/characterListing.js";
+import { characterDataListing } from "./data/star-wars-character-data.js";
+import { CharacterDetails } from "./components/characterDetails.js"
 
 export class Root extends React.Component {
     constructor(props) {
